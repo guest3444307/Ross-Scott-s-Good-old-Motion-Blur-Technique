@@ -1,0 +1,6 @@
+LoadPlugin("C:\Program Files (x86)\AviSynth 2.6\plugins\mvtools2.dll") 
+avisource("D:\Videos\Sheperd's Mind Motion Blur\Shepards Mind 240 fps Version.avi").assumeFPS(240).ConvertToYV12(matrix="Rec709", chromaresample="spline16")
+super=MSuper()
+backward_vectors = MAnalyse(super, isb = true)
+forward_vectors = MAnalyse(super, isb = false)
+MFlowBlur(super, backward_vectors, forward_vectors, blur=100).TemporalSoften(1,255,255,50,2).selectevery(8,1)
