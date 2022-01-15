@@ -9,3 +9,6 @@ Tutorial:
 4. Get VirtualDub (most up to date will probably work
 5. Follow this tutorial instead! https://www.youtube.com/playlist?list=PLPkJfiY8Fm7D56rDZKSuC1HfFohTYVfxr Its out of date but it will get you most of the way here (because i haven't done this in months! You can skip most of the videos, just look for the motion blur related ones! Hopefully they dont get taken down as i still question whether this is Ross Scott Approved(TM)
 Hopefully im not missing anything!
+
+
+I found this on a forum a year ago and  i cant remember where, but it works! you'll need to make edits so it points to the right locations though!
