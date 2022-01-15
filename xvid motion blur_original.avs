@@ -1,0 +1,5 @@
+LoadPlugin("C:\Program Files\AviSynth 2.5\plugins\mvtools.dll")
+source = avisource("C:\Program Files\Steam\steamapps\chilledsanity\half-life 2 episode one\motionblur.avi").assumeFPS(180).ConvertToYV12()
+backward_vectors = source.MVAnalyse(isb = true, truemotion=true)
+forward_vectors = source.MVAnalyse(isb = false, truemotion=true)
+return source.MVFlowBlur(backward_vectors, forward_vectors, blur=100).TemporalSoften(1,255,255,50,2).selectevery(6,1)
